@@ -8,8 +8,11 @@ a{color:var(--indigo)}
   padding:14px 20px;background:color-mix(in srgb,var(--ground) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
 .logo{display:flex;align-items:center;gap:8px;text-decoration:none;color:var(--ink);font:700 24px 'Outfit',sans-serif;letter-spacing:-.03em}
 .logo b{font-size:11px;letter-spacing:.02em;color:var(--on-indigo);background:var(--indigo);border-radius:99px;padding:2px 8px}
-.langs{display:flex;flex-wrap:wrap;gap:6px}
+.langs{display:flex;gap:6px;max-width:100%;overflow-x:auto;scrollbar-width:none}
+.langs::-webkit-scrollbar{display:none}
+.langs a{flex:none}
 .langs a{text-decoration:none;font-size:14px;font-weight:600;padding:6px 12px;border-radius:99px;background:var(--card);color:var(--ink)}
+@media (max-width:720px){html{scroll-padding-top:128px}}
 .doc{max-width:760px;margin:0 auto;padding:24px 20px 64px}
 .doc article{padding-top:24px;border-top:1px solid var(--line);margin-top:32px}
 .doc article:first-child{border-top:0;margin-top:0}
